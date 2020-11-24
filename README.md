@@ -1,4 +1,34 @@
-# Alpha Versioning
+<p align="center">
+    <img src="https://raw.githubusercontent.com/ly3xqhl8g9/alpha-versioning/master/about/identity/alpha-versioning-logo.png" height="250px">
+    <br />
+    <br />
+    <a target="_blank" href="https://github.com/ly3xqhl8g9/alpha-versioning/blob/master/LICENSE">
+        <img src="https://img.shields.io/badge/license-DEL-blue.svg?colorB=1380C3&style=for-the-badge" alt="License: DEL">
+    </a>
+</p>
+
+
+
+<h1 align="center">
+    alpha versioning
+</h1>
+
+
+<h3 align="center">
+    Development Versioning System with Ending in Sight
+</h3>
+
+
+
+### Contents
+
++ [Prolegomenon](#prolegomenon)
++ [Clearing](#clearing)
++ [Prior Art](#prior-art)
++ [Alpha](#alpha)
++ [Answers](#answers)
++ [Whys](#whys)
++ [Functions](#functions)
 
 
 
@@ -99,3 +129,30 @@ Why keep the first `0` if it is there in order to feel as if it will never be re
 Why should we ask 'what is the end version'? All things must come to an end: a life, the universe, the development.
 
 Why to think in centuries and millenia? See [prolegomenon](#prolegomenon), those distances require much more than millenia. Also, to think of a project in terms of days and weeks is to not have reflected enough on the development process: we have not started developing yet.
+
+
+
+## Functions
+
+Alpha versioning packages provide verification and update utilities for `αver` values.
+
+Supported languages:
+
++ `JavaScript`/`TypeScript`
+
+
+``` typescript
+import {
+    isAlphaVersion,
+    updateAlphaVersion,
+} from 'alpha-versioning';
+
+
+const main = () => {
+    const value = '0.1.2-3';
+    const isAlpha = isAlphaVersion(value); // true
+    const update = updateAlphaVersion(value) // '0.1.2-4'
+}
+
+main();
+```
