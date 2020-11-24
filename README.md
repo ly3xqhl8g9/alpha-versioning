@@ -46,7 +46,7 @@ The third question, `C`, 'what is the end version', is never asked by `semver`.
 
 ## Alpha
 
-Alpha Versioning can be short-named as `αver`. The `α` is a lowercase alpha, however, it can be easily misread as an `o`, which can conote that the development is `over`.
+Alpha Versioning can be short-named as `αver`. The `α` is a lowercase alpha, however, it can be easily misread as an `o` which can conote that the development is `over`.
 
 
 
@@ -59,7 +59,7 @@ A. What is the first version for an `αver` project?
 
 B. What is considered a version modification in an `αver` project?
 
-`αver` implies for the user to always use the last version, every version update is considered as breaking the public interface, it might not, but it should be considered. The difference between version `0.0.0-123` and `0.0.0-124` could be as big "as the difference between a dog and the Dog constellation".
+`αver` strongly implies to always use the last version: every version update is considered as breaking the public interface (it might not, but it should be considered when updating). The difference between version `0.0.0-123` and `0.0.0-124` could be as big "as the difference between a dog and the Dog constellation".
 
 The `alpha versioning` segments:
 
