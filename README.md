@@ -46,7 +46,7 @@ The third question, `C`, 'what is the end version', is never asked by `semver`.
 
 ## Alpha
 
-Alpha Versioning can be short-named as `αver`. The `α` is a lowercase alpha, however, it can be easily be misread as an `o`, which can conote that the development is `over`.
+Alpha Versioning can be short-named as `αver`. The `α` is a lowercase alpha, however, it can be easily misread as an `o`, which can conote that the development is `over`.
 
 
 
