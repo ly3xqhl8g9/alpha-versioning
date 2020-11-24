@@ -37,8 +37,8 @@
 There are only 3 types of civilizations:
 
 ```
-+ those who reach their nearest star
-+ those who reach their nearest galaxy
++ those who reach their nearest star neighbour
++ those who reach their nearest galaxy neighbour
 + those who perish
 ```
 
