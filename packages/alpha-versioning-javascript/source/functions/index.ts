@@ -116,6 +116,21 @@ const updateAlphaSegment = (
         }
     }
 
+    if (kind === 'revision') {
+        segments.developmenter = 0;
+    }
+
+    if (kind === 'launch') {
+        segments.developmenter = 0;
+        segments.revisioner = 0;
+    }
+
+    if (kind === 'end') {
+        segments.developmenter = 0;
+        segments.revisioner = 0;
+        segments.launcher = 0;
+    }
+
     return segments;
 }
 
@@ -140,7 +155,13 @@ const updateAlphaVersion = (
         developmenter,
     } = updatedSegments;
 
-    const alphaValue = `${ender}.${launcher}.${revisioner}-${developmenter}`;
+    const baseValue = `${ender}.${launcher}.${revisioner}`;
+
+    if (kind === 'end') {
+        return baseValue;
+    }
+
+    const alphaValue = `${baseValue}-${developmenter}`;
 
     return alphaValue;
 }
