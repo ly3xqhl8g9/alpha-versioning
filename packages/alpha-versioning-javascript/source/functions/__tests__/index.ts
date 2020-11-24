@@ -42,14 +42,14 @@ describe('getAlphaSegments', () => {
 
 
 describe('updateAlphaVersion', () => {
-    it('update alpha version developmenter', () => {
+    it('updates alpha version developmenter', () => {
         const value = '0.1.2-3';
         const result = updateAlphaVersion(value);
 
         expect(result).toEqual('0.1.2-4');
     });
 
-    it('update alpha version revisioner', () => {
+    it('updates alpha version revisioner', () => {
         const value = '0.1.2-3';
         const result = updateAlphaVersion(
             value,
@@ -59,7 +59,7 @@ describe('updateAlphaVersion', () => {
         expect(result).toEqual('0.1.3-0');
     });
 
-    it('update alpha version launcher', () => {
+    it('updates alpha version launcher', () => {
         const value = '0.1.2-3';
         const result = updateAlphaVersion(
             value,
@@ -69,7 +69,7 @@ describe('updateAlphaVersion', () => {
         expect(result).toEqual('0.2.0-0');
     });
 
-    it('update alpha version ender', () => {
+    it('updates alpha version ender', () => {
         const value = '0.1.2-3';
         const result = updateAlphaVersion(
             value,
